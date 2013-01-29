@@ -22,7 +22,7 @@ var value = keyplace(str);
 
 // format string with placeholders
 var result = value.format({ name: 'foobar', some_id: 12345 });
-console.log(result);    // "/path/to/foobar/123456"
+console.log(result);    // "/path/to/foobar/12345"
 
 // and keyplace instances prototype is a String
 console.log(value.substr(5, 10);   // "/to/:name/"
