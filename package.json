@@ -2,7 +2,7 @@
   "author": "Yosuke Kumakura <kumatch@gmail.com>",
   "name": "keyplace",
   "description": "replace string by a placeholder style.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "./lib/keyplace.js",
   "repository": {
     "type": "git",

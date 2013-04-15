@@ -28,7 +28,13 @@ console.log(result);    // "/path/to/foobar/12345"
 console.log(value.substr(5, 10);   // "/to/:name/"
 console.log(value.split('/'))      // [ "", "path", "to", ":name", ":some_id" ]
 console.log(value.length)          // 23
+
+
+// use custom format pattern (v 0.2)
+var str = '/path/to/#{name}';
+var result = keyplace(str, /#\{(\w+)\}/).format({ name: 'ok' });  // "/path/to/ok"
 ```
+
 
 
 License
