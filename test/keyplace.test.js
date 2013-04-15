@@ -100,5 +100,12 @@ describe('Keyplace', function () {
             expect(v5.format(params)).be.equal("日本語が含まれてもプレースホルダーがアルファベットならば適切に置換されるあとアンダースコアもOK");
             expect(v6.format(params)).be.equal(str6);
         });
+
+        it('should allow custom format pattern', function () {
+            var str = "/path/to/#{foo}/#{bar}/:baz/#{quux}";
+            var v = keyplace(str, /#\{(\w+)\}/);
+
+            expect(v.format({ foo: "string", bar: 42, baz: "invalid" })).to.equal('/path/to/string/42/:baz/');
+        });
     });
 });
