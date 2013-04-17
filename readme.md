@@ -1,4 +1,4 @@
-Keypalce
+Keyplace
 ===========
 
 replace string by a placeholder style.
